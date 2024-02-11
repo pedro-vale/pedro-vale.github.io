@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+  <ul>
+  {{ range .RegularPagesRecursive }}
+    <li>
+      [{{ .Date | time.Format "2006-01-01" }}]&nbsp;<a href="{{ .RelPermalink }}" >{{ .Title }}</a>
+    </li>
+  {{ end }}
+  </ul>
+{{ end }}

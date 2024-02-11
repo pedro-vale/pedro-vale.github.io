@@ -1,0 +1,8 @@
+{{ define "main" }}
+  <content>
+    {{ .Content }}
+  </content>
+
+  Recent posts:
+  {{- partial "posts.html" . -}}
+{{ end }}
