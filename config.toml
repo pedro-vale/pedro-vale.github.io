@@ -1,0 +1,5 @@
+baseURL = 'https://blog.pedrovale.eu/'
+languageCode = 'en-us'
+title = "Pedro's Threads"
+
+sectionPagesMenu = 'main'
