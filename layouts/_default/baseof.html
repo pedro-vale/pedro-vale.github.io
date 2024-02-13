@@ -2,12 +2,16 @@
 <html lang="en-US">
 
 <head>
-  {{- partial "head/meta.html" . -}}
   <title>{{ .Site.Title }}</title>
+  {{- partial "head/meta.html" . -}}
 </head>
 
 <body>
   <header>
+    <div class="btn" onclick="toggleDarkMode()">
+      <span class="icon"></span>
+    </div>
+
     {{- partial "header.html" . -}}
   </header>
 
@@ -19,5 +23,5 @@
     {{- partial "footer.html" . -}}
   </footer>
 
-  </body>
+</body>
 </html>
