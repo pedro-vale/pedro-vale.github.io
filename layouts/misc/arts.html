@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section id="main">
+  <h1 id="title">{{ .Title }}</h1>
+  <div>
+    <article id="content">
+
+      {{ with resources.Get .Params.art }}
+      {{ with .Resize "700x" }}
+          <img src="{{ .RelPermalink }}">
+        {{ end }}
+      {{ end }}
+
+      {{ .Content }}
+    </article>
+  </div>
+</section>
+{{ end }}
