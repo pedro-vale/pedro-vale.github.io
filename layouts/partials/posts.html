@@ -1,9 +1,0 @@
-<ul>
-{{ range (where .Site.Pages "Section" "posts") }}
-   {{ range last 5 .Pages }}
-   <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-   </li>
-   {{ end }}
-{{ end }}
-</ul>

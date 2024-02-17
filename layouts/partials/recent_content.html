@@ -1,0 +1,9 @@
+<ul>
+{{ range .Site.RegularPages }}
+  {{ if .Section }}
+   <li>
+    <a href="{{ .RelPermalink }}">[{{ .Date | time.Format "2006-01-02"}}] {{ .Title }}</a>
+   </li>
+  {{ end }}
+{{ end }}
+</ul>
